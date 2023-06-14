@@ -44,7 +44,7 @@ const Navbar = ({ lr, nr, theme }) => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item dropdown" onClick={handleDropdown}>
+            {/* <li className="nav-item dropdown" onClick={handleDropdown}>
               <span
                 className="nav-link dropdown-toggle"
                 data-toggle="dropdown"
@@ -80,6 +80,11 @@ const Navbar = ({ lr, nr, theme }) => {
                   <a className="dropdown-item">Architecture</a>
                 </Link>
               </div>
+            </li> */}
+             <li className="nav-item">
+              <Link href={`/`}>
+                <a className="nav-link">Home</a>
+              </Link>
             </li>
             <li className="nav-item">
               <Link href={`/about/about-dark`}>
@@ -153,21 +158,19 @@ const Navbar = ({ lr, nr, theme }) => {
                 Service
               </span>
               <div className="dropdown-menu">
-                <Link href={`/blog/blog-dark`}>
+                {/* <Link href={`/mobile-developement/mobile-developement-dark`}>
                   <a className="dropdown-item">Custom Software Development</a>
-                </Link>
-                <Link href={`/blog-list/blog-list-dark`}>
+                </Link> */}
+
+                <Link href={`/web-application/web-application-dark`}>
                   <a className="dropdown-item">Web Application Development</a>
                 </Link>
-                <Link href={`/blog-list/blog-list-dark`}>
-                  <a className="dropdown-item">Web Application Development</a>
-                </Link>
-                <Link href={`/blog-list/blog-list-dark`}>
+                <Link href={`/mobile-devlopement/mobile-devlopement-dark`}>
                   <a className="dropdown-item">
                     Mobile Application Development
                   </a>
                 </Link>
-                <Link href={`/blog-list/blog-list-dark`}>
+                <Link href={`/software-testing/software-testing-dark`}>
                   <a className="dropdown-item">Software Testing</a>
                 </Link>
               </div>

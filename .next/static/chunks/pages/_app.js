@@ -242,7 +242,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"lightLogo":"/img/logo-light.png","darkLogo":"/img/logo-dark.png","showLoading":true}');
+module.exports = JSON.parse('{"lightLogo":"/img/company-logo.svg","darkLogo":"/img/company-logo.svg","showLoading":true}');
 
 /***/ })
 

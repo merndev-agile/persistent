@@ -38,7 +38,7 @@ const Homepage = () => {
       <Video2 />
       <Portfolio grid={3} filterPosition="center" />
       <FullTestimonials noPadding />
-      <Team2 />
+      {/* <Team2 /> */}
       <Blogs2 />
       <CallToAction />
       <Footer />
