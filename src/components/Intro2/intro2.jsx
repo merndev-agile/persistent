@@ -1,14 +1,30 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
-import Link from 'next/link'
+import React from "react";
+import Link from "next/link";
 
 const Intro2 = ({ sliderRef }) => {
   return (
-    <header ref={sliderRef} className="slider-st valign position-re" style={{
-      backgroundImage: 'url(https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)',
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover'
-    }}>
+    <header
+      ref={sliderRef}
+      className="slider-st valign position-re"
+      style={{
+        backgroundImage:
+          "url(https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+      <div
+        className="overLay"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+        }}
+      ></div>
       <div className="container">
         <div className="row">
           <div className="col-lg-6 valign">
@@ -17,13 +33,11 @@ const Intro2 = ({ sliderRef }) => {
                 <h6>Digital Consulting Agency</h6>
               </div>
               <h1 className="mb-10 fw-600">Unique Business Consulting.</h1>
-              <p className='text-white'>
+              <p className="text-white">
                 We help our clients succeed by creating brand identities,
                 digital experiences, and print materials.
               </p>
-              <Link
-                href={`/about/about-dark`}
-              >
+              <Link href={`/about/about-dark`}>
                 <a className="butn bord curve mt-30">
                   <span>About Us</span>
                 </a>
@@ -42,4 +56,4 @@ const Intro2 = ({ sliderRef }) => {
   );
 };
 
-export default Intro2
+export default Intro2;

@@ -5,10 +5,15 @@ import Navbar from "../../components/Navbar/navbar";
 import BlogDetails from "../../components/Blog-details/blog-details";
 import PageHeader from "../../components/Page-header/page-header";
 import Footer from "../../components/Footer/footer";
+import { useRouter } from "next/dist/client/router";
 
 const BlogDetailsDark = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
+
+  const router = useRouter();
+  const { img } = router.query;
+  console.log("::::::::::::::::::::::::", img);
 
   React.useEffect(() => {
     var navbar = navbarRef.current,
@@ -39,8 +44,8 @@ const BlogDetailsDark = () => {
         title="Blog Details."
         paragraph="All the most current news and events of our creative team."
       />
-          <BlogDetails blog={"blog"} />
-          <Footer />
+      <BlogDetails blog={"blog"} image={img} />
+      <Footer />
     </DarkTheme>
   );
 };

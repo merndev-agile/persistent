@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/dist/client/router";
 
 const Blogs2 = () => {
+  const router = useRouter();
   return (
     <section className="blog-list section-padding sub-bg">
       <div className="container">
@@ -25,7 +27,7 @@ const Blogs2 = () => {
           <div className="col-lg-7 offset-lg-1">
             <div className="item wow fadeInUp" data-wow-delay=".3s">
               <div className="img valign">
-                <img src="/img/blog/1.jpg" alt="" />
+                <img src="img\furniture.png" alt="" />
               </div>
               <div className="cont valign">
                 <div>
@@ -45,7 +47,13 @@ const Blogs2 = () => {
                     </Link>
                   </div>
                   <h5>
-                    <Link href="/blog-details/blog-details-dark">
+                    {/* <Link href="/blog-details/blog-details-dark"> */}
+                    <Link
+                      href={{
+                        pathname: "/blog-details/blog-details-dark",
+                        query: { img: "furniture.png" },
+                      }}
+                    >
                       <a>
                         How to use solid color combine with simple furnitures.
                       </a>
@@ -56,7 +64,7 @@ const Blogs2 = () => {
             </div>
             <div className="item wow fadeInUp" data-wow-delay=".5s">
               <div className="img valign">
-                <img src="/img/blog/2.jpg" alt="" />
+                <img src="img\furniture1.png" alt="" />
               </div>
               <div className="cont valign">
                 <div>
@@ -76,7 +84,13 @@ const Blogs2 = () => {
                     </Link>
                   </div>
                   <h5>
-                    <Link href="/blog-details/blog-details-dark">
+                    {/* <Link href="/blog-details/blog-details-dark"> */}
+                    <Link
+                      href={{
+                        pathname: "/blog-details/blog-details-dark",
+                        query: { img: "furniture1.png" },
+                      }}
+                    >
                       <a>
                         How to use solid color combine with simple furnitures.
                       </a>
@@ -87,12 +101,12 @@ const Blogs2 = () => {
             </div>
             <div className="item wow fadeInUp" data-wow-delay=".3s">
               <div className="img valign">
-                <img src="/img/blog/3.jpg" alt="" />
+                <img src="img\furniture2.png" alt="" />
               </div>
               <div className="cont valign">
                 <div>
                   <div className="info">
-                    <Link href="/blog/blog-dark">
+                    <Link href="/blog/blog-dark" quer>
                       <a className="date">
                         <span>
                           <i>06</i> August
@@ -107,7 +121,13 @@ const Blogs2 = () => {
                     </Link>
                   </div>
                   <h5>
-                    <Link href="/blog-details/blog-details-dark">
+                    {/* <Link href="/blog-details/blog-details-dark"> */}
+                    <Link
+                      href={{
+                        pathname: "/blog-details/blog-details-dark",
+                        query: { img: "furniture2.png" },
+                      }}
+                    >
                       <a>
                         How to use solid color combine with simple furnitures.
                       </a>

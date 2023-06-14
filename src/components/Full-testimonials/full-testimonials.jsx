@@ -124,8 +124,7 @@ class FullTestimonials extends React.Component {
                     </div>
                   </div>
                   <p>
-                    I would highly recommend Vie Digital. I worked with the team
-                    on an animation for our ‘Click &amp; Collect’ service.
+                  Prominence’s consulting team offered and implemented sophisticated tools and techniques to assess the temperature of the organization.
                   </p>
                 </div>
                 <div className="item">
@@ -145,8 +144,7 @@ class FullTestimonials extends React.Component {
                     </div>
                   </div>
                   <p>
-                    I would highly recommend Vie Digital. I worked with the team
-                    on an animation for our ‘Click &amp; Collect’ service.
+                  Prominence’s consulting team offered and implemented sophisticated tools and techniques to assess the temperature of the organization.
                   </p>
                 </div>
                 <div className="item">
@@ -166,8 +164,7 @@ class FullTestimonials extends React.Component {
                     </div>
                   </div>
                   <p>
-                    I would highly recommend Vie Digital. I worked with the team
-                    on an animation for our ‘Click &amp; Collect’ service.
+                  Prominence’s consulting team offered and implemented sophisticated tools and techniques to assess the temperature of the organization.
                   </p>
                 </div>
                 <div className="item">
@@ -187,8 +184,7 @@ class FullTestimonials extends React.Component {
                     </div>
                   </div>
                   <p>
-                    I would highly recommend Vie Digital. I worked with the team
-                    on an animation for our ‘Click &amp; Collect’ service.
+                  Prominence’s consulting team offered and implemented sophisticated tools and techniques to assess the temperature of the organization.
                   </p>
                 </div>
               </Slider>
