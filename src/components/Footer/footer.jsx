@@ -46,14 +46,26 @@ const Footer = ({ hideBGCOLOR }) => {
               <ul>
                 <li>
                   <div className="img">
-                    <Link href="/blog-details/blog-details-dark">
+                    {/* <Link href="/blog-details/blog-details-dark"> */}
+                    <Link
+                      href={{
+                        pathname: "/blog-details/blog-details-dark",
+                        query: { img: "recent-news.png" },
+                      }}
+                    >
                       <a>
-                        <img src="/img/blog/1.jpg" alt="" />
+                        <img src="/img/recent-news.png" alt="" />
                       </a>
                     </Link>
                   </div>
                   <div className="sm-post">
-                    <Link href="/blog-details/blog-details-dark">
+                    {/* <Link href="/blog-details/blog-details-dark"> */}
+                    <Link
+                      href={{
+                        pathname: "/blog-details/blog-details-dark",
+                        query: { img: "recent-news.png" },
+                      }}
+                    >
                       <a>
                         <p>
                           The Start-Up Ultimate Guide to Make Your WordPress
@@ -70,14 +82,26 @@ const Footer = ({ hideBGCOLOR }) => {
                 </li>
                 <li>
                   <div className="img">
-                    <Link href="/blog-details/blog-details-dark">
+                    {/* <Link href="/blog-details/blog-details-dark"> */}
+                    <Link
+                      href={{
+                        pathname: "/blog-details/blog-details-dark",
+                        query: { img: "recent-news.png" },
+                      }}
+                    >
                       <a>
-                        <img src="/img/blog/2.jpg" alt="" />
+                        <img src="/img/recent-news.png" alt="" />
                       </a>
                     </Link>
                   </div>
                   <div className="sm-post">
-                    <Link href="/blog-details/blog-details-dark">
+                    {/* <Link href="/blog-details/blog-details-dark"> */}
+                    <Link
+                      href={{
+                        pathname: "/blog-details/blog-details-dark",
+                        query: { img: "recent-news.png" },
+                      }}
+                    >
                       <a>
                         <p>
                           The Start-Up Ultimate Guide to Make Your WordPress
@@ -123,10 +147,7 @@ const Footer = ({ hideBGCOLOR }) => {
               <div className="copy-right">
                 <p>
                   © 2022, Vie Template. Made with passion by
-                  <Link
-                    href="https://themeforest.net/user/themescamp/portfolio"
-                    
-                  >
+                  <Link href="https://themeforest.net/user/themescamp/portfolio">
                     <a target="_blank">ThemesCamp</a>
                   </Link>
                   .

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Formik, Form, Field } from "formik";
 import { Link as ScrollLink } from "react-scroll";
 
-const BlogDetails = ({ theme }) => {
+const BlogDetails = ({ theme,image }) => {
   const messageRef = React.useRef(null);
   function validateEmail(value) {
     let error;
@@ -15,8 +15,11 @@ const BlogDetails = ({ theme }) => {
     }
     return error;
   }
+  // /img/blog/single.jpg
+  const loaderImage = "blog/single.jpg";
+  const blogImage = image || loaderImage;
   const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
-
+  console.log("image",image)
   return (
     <section className="blog-pg single section-padding pt-0">
       <div className="container">
@@ -24,7 +27,7 @@ const BlogDetails = ({ theme }) => {
           <div className="col-lg-11">
             <div className="post">
               <div className="img">
-                <img src="/img/blog/single.jpg" alt="" />
+                <img src={`/img/${blogImage}`} alt="" />
               </div>
               <div className="content pt-60">
                 <div className="row justify-content-center">
@@ -97,12 +100,12 @@ const BlogDetails = ({ theme }) => {
                       <div className="row">
                         <div className="col-md-6">
                           <div className="mb-10">
-                            <img src="/img/blog/2.jpg" alt="" />
+                            <img src="/img/motivation.jpg" alt="" />
                           </div>
                         </div>
                         <div className="col-md-6">
                           <div className="mb-10">
-                            <img src="/img/blog/3.jpg" alt="" />
+                            <img src="/img/motivation3.jpg" alt="" />
                           </div>
                         </div>
                       </div>

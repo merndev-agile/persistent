@@ -142,6 +142,36 @@ const Navbar = ({ lr, nr, theme }) => {
                 </Link>
               </div>
             </li>
+            <li className="nav-item dropdown" onClick={handleDropdown}>
+              <span
+                className="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Service
+              </span>
+              <div className="dropdown-menu">
+                <Link href={`/blog/blog-dark`}>
+                  <a className="dropdown-item">Custom Software Development</a>
+                </Link>
+                <Link href={`/blog-list/blog-list-dark`}>
+                  <a className="dropdown-item">Web Application Development</a>
+                </Link>
+                <Link href={`/blog-list/blog-list-dark`}>
+                  <a className="dropdown-item">Web Application Development</a>
+                </Link>
+                <Link href={`/blog-list/blog-list-dark`}>
+                  <a className="dropdown-item">
+                    Mobile Application Development
+                  </a>
+                </Link>
+                <Link href={`/blog-list/blog-list-dark`}>
+                  <a className="dropdown-item">Software Testing</a>
+                </Link>
+              </div>
+            </li>
             <li className="nav-item">
               <Link href={`/contact/contact-dark`}>
                 <a className="nav-link">Contact</a>
