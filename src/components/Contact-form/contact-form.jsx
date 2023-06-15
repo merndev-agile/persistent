@@ -104,11 +104,19 @@ const ContactForm = () => {
               <h3 className="wow" data-splitting>
                 Visit Us.
               </h3>
+              
               <div className="item">
                 <h6>
                   {ContactFromDate.location.first}
                   <br />
                   {ContactFromDate.location.second}
+                  <br />
+                  {ContactFromDate.location.third}
+                  <br />
+                  {ContactFromDate.location.forth}
+                  <br />
+                  {ContactFromDate.location.fifth}
+
                 </h6>
               </div>
               <div className="social mt-50">

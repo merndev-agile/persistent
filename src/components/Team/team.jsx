@@ -27,8 +27,7 @@ const Team = () => {
                 We help to create visual strategies.
               </h3>
               <p>
-                We are Vie. We create award-winning websites, remarkable brands
-                and cutting-edge apps.Nullam imperdie.
+              Our network of consultants is always growing and our leadership team focuses on nurturing and managing our people. In addition, leaders curate the project teams to ensure a seamless fit within a client’s organisation as well as designing bespoke solutions that solve their individual challenges..
               </p>
               <div className="skills-box mt-40">
                 {teamsDate.skills.map((skill) => (
