@@ -104,6 +104,7 @@ const ContactForm = () => {
               <h3 className="wow" data-splitting>
                 Visit Us.
               </h3>
+              
               <div className="item">
                 <h6>
                   {ContactFromDate.location.first}
