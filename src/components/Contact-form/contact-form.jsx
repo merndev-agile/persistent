@@ -109,6 +109,13 @@ const ContactForm = () => {
                   {ContactFromDate.location.first}
                   <br />
                   {ContactFromDate.location.second}
+                  <br />
+                  {ContactFromDate.location.third}
+                  <br />
+                  {ContactFromDate.location.forth}
+                  <br />
+                  {ContactFromDate.location.fifth}
+
                 </h6>
               </div>
               <div className="social mt-50">

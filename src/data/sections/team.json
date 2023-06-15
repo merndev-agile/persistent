@@ -2,25 +2,25 @@
   "teams": [
     {
       "id": 1,
-      "image": "/img/team/1.jpg",
+      "image": "/img/staff.png",
       "title": "Stephanie Lawrence",
       "sub": "CEO, Colabrio Media"
     },
     {
       "id": 2,
-      "image": "/img/team/2.jpg",
+      "image": "/img/staff1.png",
       "title": "Alex Regelman",
       "sub": "CEO, Colabrio Media"
     },
     {
       "id": 3,
-      "image": "/img/team/3.jpg",
+      "image": "/img/staff2.png",
       "title": "Stacey Stamper",
       "sub": "CEO, Colabrio Media"
     },
     {
       "id": 4,
-      "image": "/img/team/4.jpg",
+      "image": "/img/staff3.png",
       "title": "Stephanie Lawrence",
       "sub": "CEO, Colabrio Media"
     }

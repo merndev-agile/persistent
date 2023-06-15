@@ -8,15 +8,14 @@ const PagesHeader = () => {
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <div className="cont mt-100 mb-50 text-center">
-              <h1 className="color-font fw-700">
-                Our dedicated team of creatives is bursting with talent,
-                experience and passion for what we do.
-              </h1>
+              <h3 className="color-font fw-700">
+              Shaping a successful future takes strong leadership and specialist skills. Our team of independent, professional consultants are hand-picked for seamless collaboration and cultural fit within your organisation. And boasting an operating model with a proven track record, we’ll not only define your company’s needs, but help shape its success.
+              </h3>
             </div>
           </div>
           <div className="col-lg-10">
             <div className="img">
-              <img src="/img/slid/about.jpg" alt="" />
+              <img src="\img\About.png" alt="" />
             </div>
           </div>
         </div>
