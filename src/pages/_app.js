@@ -5,6 +5,8 @@ import Cursor from "../components/cursor";
 import ScrollToTop from "../components/scrollToTop";
 import LoadingScreen from "../components/Loading-Screen";
 import "../styles/main.scss";
+// import { PrismicPreview } from '@prismicio/next'
+// import { repositoryName } from '@/prismicio'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,6 +18,7 @@ function MyApp({ Component, pageProps }) {
       <Cursor />
       <LoadingScreen />
       <Component {...pageProps} />
+      {/* <PrismicPreview repositoryName={repositoryName} /> */}
       <ScrollToTop />
       <Script id="wow" src="/js/wow.min.js"></Script>
       <Script

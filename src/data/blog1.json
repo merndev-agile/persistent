@@ -1,14 +1,16 @@
 [
   {
     "id": 1,
-    "title": "Build a Beautiful Blog With Ease",
-    "content": "My job is simple and sophisticated, so it is possible to describe and simple, and flowery language. I love the feel and sophistication of its superiority. I like people with a keen mind and at the same time easy to talk to. These qualities can be combined perfectly natural. However, things like people look miserable, if these properties are connected.",
-    "image": "/img/blog/b1.jpg",
-    "tags": ["WordPress", "Themeforest", "Vie"],
+    "title": "Providing experienced Gateway Review teams for independent examination of major programs or projects ",
+    "content": "To assess progress and quality of high risk or capital intensive projects, a range of stakeholders can nominate a project or program for a Gateway Review. This requires rapid mobilisation of an experienced, independent Gateway Review team. Prominence",
+    "image": "/img/defence.png",
+    "tags": ["SERVICES: STRATEGY AND PLANNING","INDUSTRY: GOVERNMENT"],
     "date": {
       "day": "07",
       "month": "August"
-    }
+    },
+    "details": "<p> To assess progress and quality of high risk or capital intensive projects, a range of stakeholders can nominate a project or program for a Gateway Review. This requires rapid mobilisation of an experienced, independent Gateway Review team. Prominence regularly assembles these teams for government clients delivering major infrastructure projects and programs. </p>"
+    
   },
   {
     "id": 2,

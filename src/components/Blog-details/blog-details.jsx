@@ -15,6 +15,7 @@ const BlogDetails = ({ theme,image }) => {
     }
     return error;
   }
+  console.log("BlogDetails",image)
   // /img/blog/single.jpg
   const loaderImage = "blog/single.jpg";
   const blogImage = image || loaderImage;

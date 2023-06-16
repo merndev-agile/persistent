@@ -17,7 +17,16 @@ const BlogStanderd = ({ blogs }) => {
                   key={blogItem.id}
                 >
                   <div className="img">
-                    <Link href={`/blog-details/blog-details-dark`}>
+                    {/* <Link href={`/blog-details/blog-details-dark`}> */}
+                    {console.log("blog image", blogItem.image.substring(5))}
+
+                    <Link
+                      key={index}
+                      href={{
+                        pathname: "/blog-details/blog-details-dark",
+                        query: { img: blogItem.image.substring(5) },
+                      }}
+                    >
                       <a>
                         <img src={blogItem.image} alt="" />
                       </a>
@@ -26,7 +35,13 @@ const BlogStanderd = ({ blogs }) => {
                   <div className="content">
                     <div className="row justify-content-center">
                       <div className="col-10">
-                        <Link href={`/blog/blog-dark`}>
+                        <Link
+                          key={index}
+                          href={{
+                            pathname: "/blog-details/blog-details-dark",
+                            query: { img: blogItem.image.substring(5) },
+                          }}
+                        >
                           <a className="date">
                             <span className="num">{blogItem.date.day}</span>
                             <span>{blogItem.date.month}</span>
@@ -34,18 +49,36 @@ const BlogStanderd = ({ blogs }) => {
                         </Link>
                         <div className="tags">
                           {blogItem.tags.map((tag, index) => (
-                            <Link key={index} href="/blog/blog-dark">
+                            <Link
+                              key={index}
+                              href={{
+                                pathname: "/blog-details/blog-details-dark",
+                                query: { img: blogItem.image.substring(5) },
+                              }}
+                            >
                               {tag}
                             </Link>
                           ))}
                         </div>
                         <h4 className="title">
-                          <Link href={`/blog-details/blog-details-dark`}>
+                          <Link
+                            key={index}
+                            href={{
+                              pathname: "/blog-details/blog-details-dark",
+                              query: { img: blogItem.image.substring(5) },
+                            }}
+                          >
                             {blogItem.title}
                           </Link>
                         </h4>
                         <p>{blogItem.content}</p>
-                        <Link href={`/blog-details/blog-details-dark`}>
+                        <Link
+                          key={index}
+                          href={{
+                            pathname: "/blog-details/blog-details-dark",
+                            query: { img: blogItem.image.substring(5) },
+                          }}
+                        >
                           <a className="butn bord curve mt-30">Read More</a>
                         </Link>
                       </div>

@@ -104,7 +104,7 @@ const SContactForm = ({ noLine }) => {
                               type="submit"
                               className="nb butn bord curve mt-30"
                             >
-                              <span>Send Massege</span>
+                              <span>Sendhhh Massege</span>
                             </button>
                           </div>
                         </div>

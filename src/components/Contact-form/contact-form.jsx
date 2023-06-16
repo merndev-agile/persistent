@@ -1,6 +1,7 @@
 import React from "react";
 import ContactFromDate from "../../data/sections/form-info.json";
 import { Formik, Form, Field } from "formik";
+import axios from 'axios';
 
 const ContactForm = () => {
   const messageRef = React.useRef(null);
@@ -13,6 +14,26 @@ const ContactForm = () => {
     }
     return error;
   }
+  const slackURL= "https://hooks.zapier.com/hooks/catch/15658711/3h8e7vl/";
+  // Function to send registration data to Zapier webhook
+  const sendRegistrationDataToSlack = async (data) => {
+    try {
+      let postData = JSON.stringify({
+        "contact": {
+          "name": data?.name,
+          "email": data?.email ,
+          "messgae": data?.messgae
+        }
+      });
+      
+     let response= await axios.post(slackURL, postData);
+     console.log(response)
+      console.log("Registration data sent to Zapier");
+    } catch (error) {
+      console.error("Error sending registration data to Zapier:", error);
+    }
+  };
+
   const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
   return (
     <section className="contact section-padding">
@@ -28,6 +49,9 @@ const ContactForm = () => {
                   message: "",
                 }}
                 onSubmit={async (values) => {
+                  console.log("values", values);
+                  // Send registration data to Zapier
+                  await sendRegistrationDataToSlack(values);
                   await sendMessage(500);
                   alert(JSON.stringify(values, null, 2));
                   // show message
@@ -40,8 +64,8 @@ const ContactForm = () => {
                   values.message = "";
                   // clear message
                   setTimeout(() => {
-                    messageRef.current.innerText = ''
-                  }, 2000)
+                    messageRef.current.innerText = "";
+                  }, 2000);
                 }}
               >
                 {({ errors, touched }) => (
@@ -104,7 +128,7 @@ const ContactForm = () => {
               <h3 className="wow" data-splitting>
                 Visit Us.
               </h3>
-              
+
               <div className="item">
                 <h6>
                   {ContactFromDate.location.first}
@@ -116,7 +140,6 @@ const ContactForm = () => {
                   {ContactFromDate.location.forth}
                   <br />
                   {ContactFromDate.location.fifth}
-
                 </h6>
               </div>
               <div className="social mt-50">
