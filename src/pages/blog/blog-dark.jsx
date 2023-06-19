@@ -35,7 +35,7 @@ const BlogDark = () => {
       </div>
       <Navbar nr={navbarRef} lr={logoRef} />
       <PageHeader
-        title="Our News."
+        title="Our Blogs."
         paragraph="All the most current news and events of our creative team."
       />
       <BlogStanderd blogs={blog1Data} />
