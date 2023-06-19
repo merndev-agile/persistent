@@ -6,25 +6,40 @@ import BlogStanderd from "../../components/Blog-standerd/blog-standerd";
 import PageHeader from "../../components/Page-header/page-header";
 import Footer from "../../components/Footer/footer";
 
+import * as contentful from "contentful";
+
 const BlogDark = () => {
-    const navbarRef = React.useRef(null);
-    const logoRef = React.useRef(null);
-    React.useEffect(() => {
-      var navbar = navbarRef.current,
-        logo = logoRef.current;
+  const navbarRef = React.useRef(null);
+  const logoRef = React.useRef(null);
+  React.useEffect(() => {
+    var navbar = navbarRef.current,
+      logo = logoRef.current;
+    if (window.pageYOffset > 300) {
+      navbar.classList.add("nav-scroll");
+    } else {
+      navbar.classList.remove("nav-scroll");
+    }
+    window.addEventListener("scroll", () => {
       if (window.pageYOffset > 300) {
         navbar.classList.add("nav-scroll");
       } else {
         navbar.classList.remove("nav-scroll");
       }
-      window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 300) {
-          navbar.classList.add("nav-scroll");
-        } else {
-          navbar.classList.remove("nav-scroll");
-        }
-      });
-    }, [navbarRef]);
+    });
+  }, [navbarRef]);
+  const client = contentful.createClient({
+    space: "7tsoua37infy",
+    // environment: '<environment_id>', // defaults to 'master' if not set
+    accessToken: "S7Hu2wy-w4NZClRg1W1lduJwqVWSpVbYN3O-gfVESZ0",
+  });
+
+  client.getEntries()
+  .then((response) => console.log(response.items))
+  .catch(console.error)
+  // client
+  //   .getContentTypes()
+  //   .then((response) => console.log(response.items))
+  //   .catch(console.error);
   return (
     <DarkTheme>
       <div className="circle-bg">
