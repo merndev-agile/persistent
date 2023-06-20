@@ -29,6 +29,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/blog-details/blog-details-dark.js"
+    ],
+    "/blog/blog-dark": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/blog/blog-dark.js"
     ]
   },
   "ampFirstPages": []
