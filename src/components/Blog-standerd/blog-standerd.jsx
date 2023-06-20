@@ -17,7 +17,7 @@ const BlogStanderd = ({ blogs }) => {
                   }`}
                   key={blogItem?.sys?.id}
                 >
-                  <Link href={`/blog-details/blog-details-dark`}>
+                  <Link href={`/blog-details`}>
                     <div className="img" style={{ height: "auto" }}>
                       {/* <a> */}
                       <img
@@ -35,7 +35,7 @@ const BlogStanderd = ({ blogs }) => {
                   <div className="content">
                     <div className="row justify-content-center">
                       <div className="col-10">
-                        {/* <Link href={`/blog/blog-dark`}>
+                        {/* <Link href={`/blog`}>
                           <a className="date">
                              <span className="num">SERVICE: {blogItem?.fields?.serviceTag}</span>
                             <span>INDUSTRY: {blogItem?.fields?.industryTag}</span>
@@ -54,18 +54,18 @@ const BlogStanderd = ({ blogs }) => {
                             <span  style={{color:"#EE3E59"}}>{blogItem?.fields?.industryTag}</span>
                           </span>
                           {/* // {blogItem.tags.map((tag, index) => (
-                           // <Link key={index} href="/blog/blog-dark">
+                           // <Link key={index} href="/blog">
                              // {tag}
                            // </Link>
                           ))} */}
                         </div>
                         <h4 className="title">
-                          <Link href={`/blog-details/blog-details-dark`}>
+                          <Link href={`/blog-details`}>
                             {blogItem?.fields?.title}
                           </Link>
                         </h4>
                         <p>{`${blogItem?.fields?.summary}  [...........................]`}</p>
-                        <Link href={`/blog-details/blog-details-dark`}>
+                        <Link href={`/blog-details`}>
                           <a className="butn bord curve mt-30">Read More</a>
                         </Link>
                       </div>
@@ -76,13 +76,13 @@ const BlogStanderd = ({ blogs }) => {
               ))}
               <div className="pagination">
                 <span className="active">
-                  <Link href={`/blog/blog-dark`}>1</Link>
+                  <Link href={`/blog`}>1</Link>
                 </span>
                 <span>
-                  <Link href={`/blog/blog-dark`}>2</Link>
+                  <Link href={`/blog`}>2</Link>
                 </span>
                 <span>
-                  <Link href={`/blog/blog-dark`}>
+                  <Link href={`/blog`}>
                     <a>
                       <i className="fas fa-angle-right"></i>
                     </a>

@@ -171,7 +171,7 @@ const BlogDetails = ({ theme,image }) => {
                   <a href="#0">Prev Post</a>
                 </span>
                 <span className="icon">
-                  <Link href={`/blog/blog-dark`}>
+                  <Link href={`/blog`}>
                     <a>
                       <i className="fas fa-th-large"></i>
                     </a>

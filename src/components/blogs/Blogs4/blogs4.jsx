@@ -176,10 +176,10 @@ const Blogs4 = () => {
                     <div className="item wow fadeIn" data-wow-delay=".6s">
                       <div className="content">
                         <div className="tags">
-                          <Link href="/blog/blog-dark">Trending</Link>
+                          <Link href="/blog">Trending</Link>
                         </div>
                         <div className="info">
-                          <Link href="/blog/blog-dark">
+                          <Link href="/blog">
                             <a>
                               <i className="far fa-clock"></i>
                               06 Aug 2022
@@ -189,7 +189,7 @@ const Blogs4 = () => {
                         </div>
                         <div className="title">
                           <h4>
-                            <Link href="/blog-details/blog-details-dark">
+                            <Link href="/blog-details">
                               Create The Lifestyle You Really Desire This World
                             </Link>
                           </h4>
@@ -202,7 +202,7 @@ const Blogs4 = () => {
                           </p>
                         </div>
                         <div className="more">
-                          <Link href={`/blog-details/blog-details-dark`}>
+                          <Link href={`/blog-details`}>
                             Read More
                           </Link>
                         </div>
@@ -213,10 +213,10 @@ const Blogs4 = () => {
                     <div className="item wow fadeIn" data-wow-delay=".6s">
                       <div className="content">
                         <div className="tags">
-                          <Link href="/blog/blog-dark">Trending</Link>
+                          <Link href="/blog">Trending</Link>
                         </div>
                         <div className="info">
-                          <Link href="/blog/blog-dark">
+                          <Link href="/blog">
                             <a>
                               <i className="far fa-clock"></i>
                               06 Aug 2022
@@ -226,7 +226,7 @@ const Blogs4 = () => {
                         </div>
                         <div className="title">
                           <h4>
-                            <Link href="/blog-details/blog-details-dark">
+                            <Link href="/blog-details">
                               <a>List of The Best Investment Projects</a>
                             </Link>
                           </h4>
@@ -239,7 +239,7 @@ const Blogs4 = () => {
                           </p>
                         </div>
                         <div className="more">
-                          <Link href={`/blog-details/blog-details-dark`}>
+                          <Link href={`/blog-details`}>
                             Read More
                           </Link>
                         </div>
@@ -250,10 +250,10 @@ const Blogs4 = () => {
                     <div className="item wow fadeIn" data-wow-delay=".6s">
                       <div className="content">
                         <div className="tags">
-                          <Link href="/blog/blog-dark">Trending</Link>
+                          <Link href="/blog">Trending</Link>
                         </div>
                         <div className="info">
-                          <Link href="/blog/blog-dark">
+                          <Link href="/blog">
                             <a>
                               <i className="far fa-clock"></i>
                               06 Aug 2022
@@ -263,7 +263,7 @@ const Blogs4 = () => {
                         </div>
                         <div className="title">
                           <h4>
-                            <Link href="/blog-details/blog-details-dark">
+                            <Link href="/blog-details">
                               <a>World Best Business Website Company</a>
                             </Link>
                           </h4>
@@ -276,7 +276,7 @@ const Blogs4 = () => {
                           </p>
                         </div>
                         <div className="more">
-                          <Link href={`/blog-details/blog-details-dark`}>
+                          <Link href={`/blog-details`}>
                             Read More
                           </Link>
                         </div>

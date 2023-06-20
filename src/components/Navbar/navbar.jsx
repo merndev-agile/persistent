@@ -133,7 +133,7 @@ const Navbar = ({ lr, nr, theme }) => {
                 Blog
               </span>
               <div className="dropdown-menu">
-                <Link href={`/blog/blog-dark`}>
+                <Link href={`/blog`}>
                   <a className="dropdown-item">Blog Standerd</a>
                 </Link>
                 <Link href={`/blog-list/blog-list-dark`}>
@@ -142,13 +142,13 @@ const Navbar = ({ lr, nr, theme }) => {
                 <Link href={`/blog-grid/blog-grid-dark`}>
                   <a className="dropdown-item">Blog Grid</a>
                 </Link>
-                <Link href={`/blog-details/blog-details-dark`}>
+                <Link href={`/blog-details`}>
                   <a className="dropdown-item">Blog Details</a>
                 </Link>
               </div>
             </li> */}
             <li className="nav-item">
-              <Link href={`/blog/blog-dark`}>
+              <Link href={`/blog`}>
                 <a className="nav-link">Blog</a>
               </Link>
             </li>

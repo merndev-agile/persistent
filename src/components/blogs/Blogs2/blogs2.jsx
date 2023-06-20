@@ -17,7 +17,7 @@ const Blogs2 = () => {
                 We provide company and finance service for startups and company
                 business.
               </p>
-              <Link href="/blog/blog-dark">
+              <Link href="/blog">
                 <a>
                   <span>More Blog Posts</span>
                 </a>
@@ -32,7 +32,7 @@ const Blogs2 = () => {
               <div className="cont valign">
                 <div>
                   <div className="info">
-                    <Link href="/blog/blog-dark">
+                    <Link href="/blog">
                       <a className="date">
                         <span>
                           <i>06</i> August
@@ -40,17 +40,17 @@ const Blogs2 = () => {
                       </a>
                     </Link>
                     <span>/</span>
-                    <Link href="/blog/blog-dark">
+                    <Link href="/blog">
                       <a className="tag">
                         <span>WordPress</span>
                       </a>
                     </Link>
                   </div>
                   <h5>
-                    {/* <Link href="/blog-details/blog-details-dark"> */}
+                    {/* <Link href="/blog-details"> */}
                     <Link
                       href={{
-                        pathname: "/blog-details/blog-details-dark",
+                        pathname: "/blog-details",
                         query: { img: "furniture.png" },
                       }}
                     >
@@ -69,7 +69,7 @@ const Blogs2 = () => {
               <div className="cont valign">
                 <div>
                   <div className="info">
-                    <Link href="/blog/blog-dark">
+                    <Link href="/blog">
                       <a className="date">
                         <span>
                           <i>06</i> August
@@ -77,17 +77,17 @@ const Blogs2 = () => {
                       </a>
                     </Link>
                     <span>/</span>
-                    <Link href="/blog/blog-dark">
+                    <Link href="/blog">
                       <a className="tag">
                         <span>WordPress</span>
                       </a>
                     </Link>
                   </div>
                   <h5>
-                    {/* <Link href="/blog-details/blog-details-dark"> */}
+                    {/* <Link href="/blog-details"> */}
                     <Link
                       href={{
-                        pathname: "/blog-details/blog-details-dark",
+                        pathname: "/blog-details",
                         query: { img: "furniture1.png" },
                       }}
                     >
@@ -106,7 +106,7 @@ const Blogs2 = () => {
               <div className="cont valign">
                 <div>
                   <div className="info">
-                    <Link href="/blog/blog-dark" quer>
+                    <Link href="/blog" quer>
                       <a className="date">
                         <span>
                           <i>06</i> August
@@ -114,17 +114,17 @@ const Blogs2 = () => {
                       </a>
                     </Link>
                     <span>/</span>
-                    <Link href="/blog/blog-dark">
+                    <Link href="/blog">
                       <a className="tag">
                         <span>WordPress</span>
                       </a>
                     </Link>
                   </div>
                   <h5>
-                    {/* <Link href="/blog-details/blog-details-dark"> */}
+                    {/* <Link href="/blog-details"> */}
                     <Link
                       href={{
-                        pathname: "/blog-details/blog-details-dark",
+                        pathname: "/blog-details",
                         query: { img: "furniture2.png" },
                       }}
                     >
