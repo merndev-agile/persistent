@@ -3,9 +3,11 @@ import React from "react";
 import Link from "next/link";
 import { Formik, Form, Field } from "formik";
 import { Link as ScrollLink } from "react-scroll";
+import * as contentful from "contentful";
 
-const BlogDetails = ({ theme,image }) => {
+const BlogDetails = ({ theme}) => {
   const messageRef = React.useRef(null);
+  const [blogs,setBlogs] = React.useState([])
   function validateEmail(value) {
     let error;
     if (!value) {
@@ -16,19 +18,38 @@ const BlogDetails = ({ theme,image }) => {
     return error;
   }
   // /img/blog/single.jpg
-  const loaderImage = "blog/single.jpg";
-  const blogImage = image || loaderImage;
+  // const loaderImage = "blog/single.jpg";
+  // const blogImage = image || loaderImage;
   const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
-  console.log("image",image)
+  // console.log("image",image)
+
+  const client = contentful.createClient({
+    space: "7tsoua37infy",
+    accessToken: "S7Hu2wy-w4NZClRg1W1lduJwqVWSpVbYN3O-gfVESZ0",
+  });
+
+  React.useEffect(() => {
+    const getAllEntries = async () => {
+      try {
+        await client.getEntries().then((Entries) => {
+          console.log(Entries?.items);
+          setBlogs(Entries?.items)
+        });
+      } catch (error) {
+        console.log("error: ", error);
+      }
+    };
+    getAllEntries();
+  }, []);
   return (
     <section className="blog-pg single section-padding pt-0">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-11">
             <div className="post">
-              <div className="img">
+              {/* <div className="img">
                 <img src={`/img/${blogImage}`} alt="" />
-              </div>
+              </div> */}
               <div className="content pt-60">
                 <div className="row justify-content-center">
                   <div className="col-lg-10">
@@ -171,7 +192,7 @@ const BlogDetails = ({ theme,image }) => {
                   <a href="#0">Prev Post</a>
                 </span>
                 <span className="icon">
-                  <Link href={`/blog/blog-dark`}>
+                  <Link href={`/blog`}>
                     <a>
                       <i className="fas fa-th-large"></i>
                     </a>

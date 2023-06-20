@@ -46,10 +46,10 @@ const Footer = ({ hideBGCOLOR }) => {
               <ul>
                 <li>
                   <div className="img">
-                    {/* <Link href="/blog-details/blog-details-dark"> */}
+                    {/* <Link href="/blog-details"> */}
                     <Link
                       href={{
-                        pathname: "/blog-details/blog-details-dark",
+                        pathname: "/blog-details",
                         query: { img: "recent-news.png" },
                       }}
                     >
@@ -59,10 +59,10 @@ const Footer = ({ hideBGCOLOR }) => {
                     </Link>
                   </div>
                   <div className="sm-post">
-                    {/* <Link href="/blog-details/blog-details-dark"> */}
+                    {/* <Link href="/blog-details"> */}
                     <Link
                       href={{
-                        pathname: "/blog-details/blog-details-dark",
+                        pathname: "/blog-details",
                         query: { img: "recent-news.png" },
                       }}
                     >
@@ -73,7 +73,7 @@ const Footer = ({ hideBGCOLOR }) => {
                         </p>
                       </a>
                     </Link>
-                    <Link href="/blog/blog-dark">
+                    <Link href="/blog">
                       <a>
                         <span className="date">14 sep 2022</span>
                       </a>
@@ -82,10 +82,10 @@ const Footer = ({ hideBGCOLOR }) => {
                 </li>
                 <li>
                   <div className="img">
-                    {/* <Link href="/blog-details/blog-details-dark"> */}
+                    {/* <Link href="/blog-details"> */}
                     <Link
                       href={{
-                        pathname: "/blog-details/blog-details-dark",
+                        pathname: "/blog-details",
                         query: { img: "recent-news.png" },
                       }}
                     >
@@ -95,10 +95,10 @@ const Footer = ({ hideBGCOLOR }) => {
                     </Link>
                   </div>
                   <div className="sm-post">
-                    {/* <Link href="/blog-details/blog-details-dark"> */}
+                    {/* <Link href="/blog-details"> */}
                     <Link
                       href={{
-                        pathname: "/blog-details/blog-details-dark",
+                        pathname: "/blog-details",
                         query: { img: "recent-news.png" },
                       }}
                     >
@@ -109,7 +109,7 @@ const Footer = ({ hideBGCOLOR }) => {
                         </p>
                       </a>
                     </Link>
-                    <Link href="/blog/blog-dark">
+                    <Link href="/blog">
                       <a>
                         <span className="date">14 sep 2022</span>
                       </a>

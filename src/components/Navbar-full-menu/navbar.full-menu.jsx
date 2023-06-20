@@ -240,7 +240,7 @@ const NavbarFullMenu = ({ theme }) => {
                         </li>
                         <li>
                           <div className="o-hidden">
-                            <Link href={`/blog/blog-dark`}>
+                            <Link href={`/blog`}>
                               <a className="sub-link">
                                 <span className="nm">01.</span>Blog Standerd
                               </a>
@@ -267,7 +267,7 @@ const NavbarFullMenu = ({ theme }) => {
                         </li>
                         <li>
                           <div className="o-hidden">
-                            <Link href={`/blog-details/blog-details-dark`}>
+                            <Link href={`/blog-details`}>
                               <a className="sub-link">
                                 <span className="nm">04.</span>Blog Details
                               </a>

@@ -39,7 +39,7 @@ const BlogLight = () => {
         title="Our News."
         paragraph="All the most current news and events of our creative team."
       />
-      <BlogStanderd blogs={blog1Data} />
+      {/* <BlogStanderd blogs={blog1Data} /> */}
       <Footer />
     </LightTheme>
   );
