@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
-import {BlogDetails} from "../Blog-details/blog-details"
 
 const BlogStanderd = ({ blogs }) => {
   return (
@@ -65,7 +64,8 @@ const BlogStanderd = ({ blogs }) => {
                           </Link>
                         </h4>
                         <p>{`${blogItem?.fields?.summary}  [...........................]`}</p>
-                        <Link href={`/blog-details`}>
+                        <Link href={{pathname:`/blog-details` , query: {id: blogItem?.sys?.id}}}>
+                          {/*  <Link href={{ pathname: '/destination', query: { id } }}> */}
                           <a className="butn bord curve mt-30">Read More</a>
                         </Link>
                       </div>
