@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import blog1Data from "../../data/blog1.json";
 import DarkTheme from "../../layouts/Dark";
 import Navbar from "../../components/Navbar/navbar";
@@ -11,6 +11,7 @@ import * as contentful from "contentful";
 const BlogDark = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
+  const [blogs, setBlogs] = useState([]);
   React.useEffect(() => {
     var navbar = navbarRef.current,
       logo = logoRef.current;
@@ -27,19 +28,26 @@ const BlogDark = () => {
       }
     });
   }, [navbarRef]);
+
   const client = contentful.createClient({
     space: "7tsoua37infy",
-    // environment: '<environment_id>', // defaults to 'master' if not set
     accessToken: "S7Hu2wy-w4NZClRg1W1lduJwqVWSpVbYN3O-gfVESZ0",
   });
 
-  client.getEntries()
-  .then((response) => console.log(response.items))
-  .catch(console.error)
-  // client
-  //   .getContentTypes()
-  //   .then((response) => console.log(response.items))
-  //   .catch(console.error);
+  useEffect(() => {
+    const getAllEntries = async () => {
+      try {
+        await client.getEntries().then((Entries) => {
+          console.log(Entries?.items);
+          setBlogs(Entries?.items)
+        });
+      } catch (error) {
+        console.log("error: ", error);
+      }
+    };
+    getAllEntries();
+  }, []);
+
   return (
     <DarkTheme>
       <div className="circle-bg">
@@ -53,7 +61,7 @@ const BlogDark = () => {
         title="Our Blogs."
         paragraph="All the most current news and events of our creative team."
       />
-      <BlogStanderd blogs={blog1Data} />
+      <BlogStanderd blogs={blogs} />
       <Footer />
     </DarkTheme>
   );

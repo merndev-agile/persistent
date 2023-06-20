@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 const BlogStanderd = ({ blogs }) => {
+  console.log(blogs)
   return (
     <section className="blog-pg section-padding pt-0">
       <div className="container">
@@ -10,6 +11,7 @@ const BlogStanderd = ({ blogs }) => {
           <div className="col-lg-11">
             <div className="posts">
               {blogs.map((blogItem, index) => (
+                console.log()
                 <div
                   className={`item ${
                     index === blogs.length - 1 ? "" : "mb-80"
@@ -18,13 +20,12 @@ const BlogStanderd = ({ blogs }) => {
                 >
                   <div className="img">
                     {/* <Link href={`/blog-details/blog-details-dark`}> */}
-                    {console.log("blog image", blogItem.image.substring(5))}
 
                     <Link
                       key={index}
                       href={{
                         pathname: "/blog-details/blog-details-dark",
-                        query: { img: blogItem.image.substring(5) },
+                        
                       }}
                     >
                       <a>
@@ -39,13 +40,13 @@ const BlogStanderd = ({ blogs }) => {
                           key={index}
                           href={{
                             pathname: "/blog-details/blog-details-dark",
-                            query: { img: blogItem.image.substring(5) },
+                            
                           }}
                         >
-                          <a className="date">
+                          {/* <a className="date">
                             <span className="num">{blogItem.date.day}</span>
                             <span>{blogItem.date.month}</span>
-                          </a>
+                          </a> */}
                         </Link>
                         <div className="tags">
                           {blogItem.tags.map((tag, index) => (
@@ -53,7 +54,7 @@ const BlogStanderd = ({ blogs }) => {
                               key={index}
                               href={{
                                 pathname: "/blog-details/blog-details-dark",
-                                query: { img: blogItem.image.substring(5) },
+                                
                               }}
                             >
                               {tag}
@@ -65,7 +66,7 @@ const BlogStanderd = ({ blogs }) => {
                             key={index}
                             href={{
                               pathname: "/blog-details/blog-details-dark",
-                              query: { img: blogItem.image.substring(5) },
+                              
                             }}
                           >
                             {blogItem.title}
@@ -76,7 +77,7 @@ const BlogStanderd = ({ blogs }) => {
                           key={index}
                           href={{
                             pathname: "/blog-details/blog-details-dark",
-                            query: { img: blogItem.image.substring(5) },
+                            
                           }}
                         >
                           <a className="butn bord curve mt-30">Read More</a>
