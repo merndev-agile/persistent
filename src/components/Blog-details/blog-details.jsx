@@ -5,7 +5,7 @@ import { Formik, Form, Field } from "formik";
 import { Link as ScrollLink } from "react-scroll";
 import * as contentful from "contentful";
 
-const BlogDetails = ({ theme,image }) => {
+const BlogDetails = ({ theme}) => {
   const messageRef = React.useRef(null);
   const [blogs,setBlogs] = React.useState([])
   function validateEmail(value) {
@@ -18,8 +18,8 @@ const BlogDetails = ({ theme,image }) => {
     return error;
   }
   // /img/blog/single.jpg
-  const loaderImage = "blog/single.jpg";
-  const blogImage = image || loaderImage;
+  // const loaderImage = "blog/single.jpg";
+  // const blogImage = image || loaderImage;
   const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
   // console.log("image",image)
 
@@ -47,9 +47,9 @@ const BlogDetails = ({ theme,image }) => {
         <div className="row justify-content-center">
           <div className="col-lg-11">
             <div className="post">
-              <div className="img">
+              {/* <div className="img">
                 <img src={`/img/${blogImage}`} alt="" />
-              </div>
+              </div> */}
               <div className="content pt-60">
                 <div className="row justify-content-center">
                   <div className="col-lg-10">
