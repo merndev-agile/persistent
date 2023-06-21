@@ -1,14 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Formik, Form, Field } from "formik";
 import { Link as ScrollLink } from "react-scroll";
 import * as contentful from "contentful";
 
-
-const BlogDetails = ({ theme }) => {
+const BlogDetails = ({ theme = "dark" }) => {
+  const router = useRouter();
+  const query = router.query;
+  console.log("theme", theme);
   const messageRef = React.useRef(null);
-  const [blogs,setBlogs] = React.useState([])
+  const [blogs, setBlogs] = React.useState([]);
 
   function validateEmail(value) {
     let error;
@@ -33,7 +36,7 @@ const BlogDetails = ({ theme }) => {
       try {
         await client.getEntries().then((Entries) => {
           console.log(Entries?.items);
-          setBlogs(Entries?.items)
+          setBlogs(Entries?.items);
         });
       } catch (error) {
         console.log("error: ", error);
@@ -41,16 +44,16 @@ const BlogDetails = ({ theme }) => {
     };
     getAllEntries();
   }, []);
-  console.log("blogs...",blogs)
+  console.log("blogs...", query);
   return (
-    <section className="blog-pg single section-padding pt-0">
-      <div className="container">
+    <div>
+      {/* <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-11">
             <div className="post">
-              {/* <div className="img">
+              <div className="img">
                 <img src={`/img/${blogImage}`} alt="" />
-              </div> */}
+              </div>
               <div className="content pt-60">
                 <div className="row justify-content-center">
                   <div className="col-lg-10">
@@ -363,8 +366,9 @@ const BlogDetails = ({ theme }) => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </div> */}
+      BlogPage
+    </div>
   );
 };
 

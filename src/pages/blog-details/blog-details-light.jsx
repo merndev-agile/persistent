@@ -39,7 +39,7 @@ const BlogDetailsLight = () => {
         title="Blog Details."
         paragraph="All the most current news and events of our creative team."
       />
-          <BlogDetails theme="light"/>
+          {/* <BlogDetails theme="light"/> */}
           <Footer />
     </LightTheme>
   );
