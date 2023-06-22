@@ -16,7 +16,7 @@ const BlogStanderd = ({ blogs }) => {
                   }`}
                   key={blogItem?.sys?.id}
                 >
-                  <Link href={`/blog-details`}>
+                  <Link href={`/blog-details`} > 
                     <div className="img" style={{ height: "auto" }}>
                       {/* <a> */}
                       <img

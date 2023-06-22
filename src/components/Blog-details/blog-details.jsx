@@ -13,7 +13,6 @@ const BlogDetails = ({ theme = "dark" }) => {
   const router = useRouter();
   const { id } = router.query;
 
-  console.log("id", id);
   function validateEmail(value) {
     let error;
     if (!value) {
@@ -58,14 +57,9 @@ const BlogDetails = ({ theme = "dark" }) => {
       setSingleBlog(fieldValue);
     }
   }, [blogs]);
-  console.log(
-    "setSingleBlog",
-    singleBlog,
-    singleBlog?.image?.fields?.file?.url
-  );
+
   const loaderImage = "blog/single.jpg";
   const blogImage = singleBlog?.image?.fields?.file?.url || loaderImage;
-  console.log("blogImage: " + blogImage);
 
   return (
     <section className="blog-pg single section-padding pt-0">
@@ -95,7 +89,11 @@ const BlogDetails = ({ theme = "dark" }) => {
                       <ul>
                         {singleBlog?.heading1List?.map((list, idx) => {
                           return (
-                            <li value={idx} style={{ listStyleType: "square" }}>
+                            <li
+                              value={idx}
+                              style={{ listStyleType: "square" }}
+                              key={idx}
+                            >
                               {/* <span>{idx}</span>  */}
                               {list}.
                             </li>
@@ -109,7 +107,7 @@ const BlogDetails = ({ theme = "dark" }) => {
                       <ul>
                         {singleBlog?.heading2List?.map((list, idx) => {
                           return (
-                            <li style={{ listStyleType: "square" }}>
+                            <li style={{ listStyleType: "square" }} key={idx}>
                               {/* <span>{idx}</span>  */}
                               {list}.
                             </li>
@@ -123,7 +121,7 @@ const BlogDetails = ({ theme = "dark" }) => {
                       <ul>
                         {singleBlog?.heading3List?.map((list, idx) => {
                           return (
-                            <li style={{ listStyleType: "square" }}>
+                            <li style={{ listStyleType: "square" }} key={idx}>
                               {/* <span>{idx}</span>  */}
                               {list}.
                             </li>

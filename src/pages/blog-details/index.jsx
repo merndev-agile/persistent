@@ -11,10 +11,6 @@ const BlogDetailsDark = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
 
-  // const router = useRouter();
-  // const { img } = router.query;
-  // console.log("::::::::::::::::::::::::", img);
-
   React.useEffect(() => {
     var navbar = navbarRef.current,
       logo = logoRef.current;
