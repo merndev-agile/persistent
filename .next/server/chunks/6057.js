@@ -34,24 +34,24 @@ const BlogStanderd = ({
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
             className: "posts",
             children: [blogs.map((blogItem, index) => {
-              var _blogItem$sys, _blogItem$fields, _blogItem$fields$imag, _blogItem$fields$imag2, _blogItem$fields$imag3, _blogItem$fields2, _blogItem$fields3, _blogItem$fields4, _blogItem$fields5, _blogItem$sys2;
+              var _blogItem$sys, _blogItem$sys2, _blogItem$fields, _blogItem$fields$imag, _blogItem$fields$imag2, _blogItem$fields$imag3, _blogItem$fields2, _blogItem$fields3, _blogItem$sys3, _blogItem$fields4, _blogItem$fields5, _blogItem$sys4;
 
               return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                 className: `item ${index === blogs.length - 1 ? "" : "mb-80"}`,
                 children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx(next_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-                  href: `/blog-details`,
+                  href: {
+                    pathname: `/blog-details`,
+                    query: {
+                      id: blogItem === null || blogItem === void 0 ? void 0 : (_blogItem$sys2 = blogItem.sys) === null || _blogItem$sys2 === void 0 ? void 0 : _blogItem$sys2.id
+                    }
+                  },
                   children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx("div", {
                     className: "img",
-                    style: {
-                      height: "auto"
-                    },
                     children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx("img", {
                       src: blogItem === null || blogItem === void 0 ? void 0 : (_blogItem$fields = blogItem.fields) === null || _blogItem$fields === void 0 ? void 0 : (_blogItem$fields$imag = _blogItem$fields.image) === null || _blogItem$fields$imag === void 0 ? void 0 : (_blogItem$fields$imag2 = _blogItem$fields$imag.fields) === null || _blogItem$fields$imag2 === void 0 ? void 0 : (_blogItem$fields$imag3 = _blogItem$fields$imag2.file) === null || _blogItem$fields$imag3 === void 0 ? void 0 : _blogItem$fields$imag3.url,
                       alt: "",
                       style: {
-                        backgroundPosition: "center",
-                        width: " 100%",
-                        backgroundSize: "cover"
+                        height: "480px"
                       }
                     })
                   })
@@ -82,7 +82,12 @@ const BlogStanderd = ({
                       }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx("h4", {
                         className: "title",
                         children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx(next_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-                          href: `/blog-details`,
+                          href: {
+                            pathname: `/blog-details`,
+                            query: {
+                              id: blogItem === null || blogItem === void 0 ? void 0 : (_blogItem$sys3 = blogItem.sys) === null || _blogItem$sys3 === void 0 ? void 0 : _blogItem$sys3.id
+                            }
+                          },
                           children: blogItem === null || blogItem === void 0 ? void 0 : (_blogItem$fields4 = blogItem.fields) === null || _blogItem$fields4 === void 0 ? void 0 : _blogItem$fields4.title
                         })
                       }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx("p", {
@@ -91,7 +96,7 @@ const BlogStanderd = ({
                         href: {
                           pathname: `/blog-details`,
                           query: {
-                            id: blogItem === null || blogItem === void 0 ? void 0 : (_blogItem$sys2 = blogItem.sys) === null || _blogItem$sys2 === void 0 ? void 0 : _blogItem$sys2.id
+                            id: blogItem === null || blogItem === void 0 ? void 0 : (_blogItem$sys4 = blogItem.sys) === null || _blogItem$sys4 === void 0 ? void 0 : _blogItem$sys4.id
                           }
                         },
                         children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx("a", {
@@ -102,8 +107,7 @@ const BlogStanderd = ({
                     })
                   })
                 })]
-              }, blogItem === null || blogItem === void 0 ? void 0 : (_blogItem$sys = blogItem.sys) === null || _blogItem$sys === void 0 ? void 0 : _blogItem$sys.id) // console.log("blogItem",blogItem?.fields,blogItem?.fields?.title)
-              ;
+              }, blogItem === null || blogItem === void 0 ? void 0 : (_blogItem$sys = blogItem.sys) === null || _blogItem$sys === void 0 ? void 0 : _blogItem$sys.id);
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
               className: "pagination",
               children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx("span", {

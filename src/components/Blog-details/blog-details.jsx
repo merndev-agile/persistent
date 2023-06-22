@@ -22,9 +22,7 @@ const BlogDetails = ({ theme = "dark" }) => {
     }
     return error;
   }
-  // /img/blog/single.jpg
-  // const loaderImage = "blog/single.jpg";
-  // const blogImage = image || loaderImage;
+ 
   const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
 
   const client = contentful.createClient({
@@ -69,10 +67,11 @@ const BlogDetails = ({ theme = "dark" }) => {
             <div className="post">
               <div className="img">
                 {blogImage === loaderImage ? (
-                  <img src={`/img/${blogImage}`} alt="" />
+                  <img src={`/img/${blogImage}`} alt="" style={{height:"450px"}}/>
                 ) : (
-                  <img src={blogImage} alt="" />
+                  <img src={blogImage} alt=""  style={{height:"450px"}} />
                 )}
+                
               </div>
               <div className="content pt-60">
                 <div className="row justify-content-center">

@@ -55,10 +55,7 @@ const BlogDetails = ({
     }
 
     return error;
-  } // /img/blog/single.jpg
-  // const loaderImage = "blog/single.jpg";
-  // const blogImage = image || loaderImage;
-
+  }
 
   const sendMessage = ms => new Promise(r => setTimeout(r, ms));
 
@@ -107,10 +104,16 @@ const BlogDetails = ({
               className: "img",
               children: blogImage === loaderImage ? /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx("img", {
                 src: `/img/${blogImage}`,
-                alt: ""
+                alt: "",
+                style: {
+                  height: "450px"
+                }
               }) : /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx("img", {
                 src: blogImage,
-                alt: ""
+                alt: "",
+                style: {
+                  height: "450px"
+                }
               })
             }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx("div", {
               className: "content pt-60",

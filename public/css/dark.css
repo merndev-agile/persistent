@@ -82,6 +82,12 @@ body {
 img {
   width: 100%;
   height: auto;
+  background-position: center;
+  background-size: "cover";
+  background-repeat: no-repeat;
+  object-fit: cover;
+  border-radius: 4px;
+ 
 }
 
 span,
@@ -1948,7 +1954,7 @@ span:hover {
 }
 
 .topnav .logo {
-  width: 50px;
+  width: 150px;
 }
 
 .topnav .menu-icon {

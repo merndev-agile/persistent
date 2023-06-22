@@ -16,63 +16,63 @@ const BlogStanderd = ({ blogs }) => {
                   }`}
                   key={blogItem?.sys?.id}
                 >
-                  <Link href={`/blog-details`} > 
-                    <div className="img" style={{ height: "auto" }}>
-                      {/* <a> */}
+                  <Link
+                    href={{
+                      pathname: `/blog-details`,
+                      query: { id: blogItem?.sys?.id },
+                    }}
+                  >
+                    <div className="img">
                       <img
                         src={blogItem?.fields?.image?.fields?.file?.url}
                         alt=""
                         style={{
-                          backgroundPosition: "center",
-                          width: " 100%",
-                          backgroundSize: "cover",
+                          height: "480px",
                         }}
                       />
-                      {/* </a> */}
                     </div>
                   </Link>
                   <div className="content">
                     <div className="row justify-content-center">
                       <div className="col-10">
-                        {/* <Link href={`/blog`}>
-                          <a className="date">
-                             <span className="num">SERVICE: {blogItem?.fields?.serviceTag}</span>
-                            <span>INDUSTRY: {blogItem?.fields?.industryTag}</span>
-                          </a>
-                        </Link> */}
                         <div className="tags">
                           <span className="num">
                             SERVICE : &nbsp;
-                            <span style={{color:"#EE3E59"}}>{blogItem?.fields?.serviceTag}</span>
+                            <span style={{ color: "#EE3E59" }}>
+                              {blogItem?.fields?.serviceTag}
+                            </span>
                           </span>
-                          &nbsp;
-                          &nbsp;
-                          &nbsp;
+                          &nbsp; &nbsp; &nbsp;
                           <span>
                             INDUSTRY : &nbsp;
-                            <span  style={{color:"#EE3E59"}}>{blogItem?.fields?.industryTag}</span>
+                            <span style={{ color: "#EE3E59" }}>
+                              {blogItem?.fields?.industryTag}
+                            </span>
                           </span>
-                          {/* // {blogItem.tags.map((tag, index) => (
-                           // <Link key={index} href="/blog">
-                             // {tag}
-                           // </Link>
-                          ))} */}
                         </div>
                         <h4 className="title">
-                          <Link href={`/blog-details`}>
+                          <Link
+                            href={{
+                              pathname: `/blog-details`,
+                              query: { id: blogItem?.sys?.id },
+                            }}
+                          >
                             {blogItem?.fields?.title}
                           </Link>
                         </h4>
                         <p>{`${blogItem?.fields?.summary}  [...........................]`}</p>
-                        <Link href={{pathname:`/blog-details` , query: {id: blogItem?.sys?.id}}}>
-                          {/*  <Link href={{ pathname: '/destination', query: { id } }}> */}
+                        <Link
+                          href={{
+                            pathname: `/blog-details`,
+                            query: { id: blogItem?.sys?.id },
+                          }}
+                        >
                           <a className="butn bord curve mt-30">Read More</a>
                         </Link>
                       </div>
                     </div>
                   </div>
                 </div>
-                // console.log("blogItem",blogItem?.fields,blogItem?.fields?.title)
               ))}
               <div className="pagination">
                 <span className="active">
