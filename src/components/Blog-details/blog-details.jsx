@@ -71,6 +71,7 @@ const BlogDetails = ({ theme = "dark" }) => {
                 ) : (
                   <img src={blogImage} alt=""  style={{height:"450px"}} />
                 )}
+                
               </div>
               <div className="content pt-60">
                 <div className="row justify-content-center">
