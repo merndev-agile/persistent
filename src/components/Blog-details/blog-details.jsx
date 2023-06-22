@@ -4,10 +4,15 @@ import Link from "next/link";
 import { Formik, Form, Field } from "formik";
 import { Link as ScrollLink } from "react-scroll";
 import * as contentful from "contentful";
-
-const BlogDetails = ({ theme}) => {
+import { useRouter } from "next/router";
+const BlogDetails = ({ theme = "dark" }) => {
   const messageRef = React.useRef(null);
-  const [blogs,setBlogs] = React.useState([])
+  const [blogs, setBlogs] = React.useState([]);
+  const [singleBlog, setSingleBlog] = React.useState(null);
+
+  const router = useRouter();
+  const { id } = router.query;
+
   function validateEmail(value) {
     let error;
     if (!value) {
@@ -21,7 +26,6 @@ const BlogDetails = ({ theme}) => {
   // const loaderImage = "blog/single.jpg";
   // const blogImage = image || loaderImage;
   const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
-  // console.log("image",image)
 
   const client = contentful.createClient({
     space: "7tsoua37infy",
@@ -33,7 +37,7 @@ const BlogDetails = ({ theme}) => {
       try {
         await client.getEntries().then((Entries) => {
           console.log(Entries?.items);
-          setBlogs(Entries?.items)
+          setBlogs(Entries?.items);
         });
       } catch (error) {
         console.log("error: ", error);
@@ -41,73 +45,93 @@ const BlogDetails = ({ theme}) => {
     };
     getAllEntries();
   }, []);
+  React.useEffect(() => {
+    // Find the blog entry based on sys.id
+    const findBlog = blogs.find((blog) => blog.sys.id === id);
+
+    if (findBlog) {
+      // Extract the desired field value from the blog entry
+      const fieldValue = findBlog?.fields;
+
+      // Update the singleBlog state with the extracted value
+      setSingleBlog(fieldValue);
+    }
+  }, [blogs]);
+
+  const loaderImage = "blog/single.jpg";
+  const blogImage = singleBlog?.image?.fields?.file?.url || loaderImage;
+
   return (
     <section className="blog-pg single section-padding pt-0">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-11">
             <div className="post">
-              {/* <div className="img">
-                <img src={`/img/${blogImage}`} alt="" />
-              </div> */}
+              <div className="img">
+                {blogImage === loaderImage ? (
+                  <img src={`/img/${blogImage}`} alt="" />
+                ) : (
+                  <img src={blogImage} alt="" />
+                )}
+              </div>
               <div className="content pt-60">
                 <div className="row justify-content-center">
                   <div className="col-lg-10">
                     <div className="cont">
-                      <h4 className="extra-title">
-                        Priorities that will pop up in any particular month.
-                      </h4>
+                      <h4 className="extra-title">{singleBlog?.title}</h4>
                       <div className="spacial">
-                        <p>
-                          Never ever think of giving up. Winners never quit and
-                          quitters never win. Take all negative words out of
-                          your mental dictionary and focus on the solutions with
-                          utmost conviction and patience. The battle is never
-                          lost until you’ve abandon your vision.
-                        </p>
+                        <p>{singleBlog?.postContent}</p>
                       </div>
-                      <p>
-                        the main component of a healthy environment for self
-                        esteem is that it needs be nurturing. The main compont
-                        of a healthy environment for self esteem is that it
-                        needs be nurturing. The main component of a healthy env
-                        for self esteem The main compont be nurturing It should
-                        provide unconditional warmth. The main component of a
-                        healthy env for self esteem The main compont be
-                        nurturing It should provide unconditional
-                      </p>
 
-                      <h6>- We all intend to plan ahead.</h6>
+                      <h5>-{singleBlog?.heading1}.</h5>
 
-                      <p>
-                        We all intend to plan ahead, but too often let the
-                        day-to-day minutia get in the way of making a calendar
-                        for the year. Sure, you can’t know every detail to
-                        anticipate. Heck, you can’t know half the priorities
-                        that will pop up in any particular month. But you can
-                        plan for big picture seasonality, busy-times, and
-                        events.
-                      </p>
-
+                      <p>{singleBlog?.heading1Paragraph}</p>
                       <ul>
-                        <li>
-                          <span>01</span> Integer in volutpat libero.
-                        </li>
-                        <li>
-                          <span>02</span> Vivamus maximus ultricies pulvinar.
-                        </li>
-                        <li>
-                          <span>03</span> priorities that will pop up in any
-                          particular month.
-                        </li>
-                        <li>
-                          <span>04</span> We all intend to plan ahead.
-                        </li>
-                        <li>
-                          <span>05</span> The main component of a healthy env
-                          for self esteem.
-                        </li>
+                        {singleBlog?.heading1List?.map((list, idx) => {
+                          return (
+                            <li
+                              value={idx}
+                              style={{ listStyleType: "square" }}
+                              key={idx}
+                            >
+                              {/* <span>{idx}</span>  */}
+                              {list}.
+                            </li>
+                          );
+                        })}
                       </ul>
+
+                      <h5>-{singleBlog?.heading2}.</h5>
+
+                      <p>{singleBlog?.heading2Paragraph}</p>
+                      <ul>
+                        {singleBlog?.heading2List?.map((list, idx) => {
+                          return (
+                            <li style={{ listStyleType: "square" }} key={idx}>
+                              {/* <span>{idx}</span>  */}
+                              {list}.
+                            </li>
+                          );
+                        })}
+                      </ul>
+
+                      <h5>-{singleBlog?.heading3}.</h5>
+
+                      <p>{singleBlog?.heading3Paragraph}</p>
+                      <ul>
+                        {singleBlog?.heading3List?.map((list, idx) => {
+                          return (
+                            <li style={{ listStyleType: "square" }} key={idx}>
+                              {/* <span>{idx}</span>  */}
+                              {list}.
+                            </li>
+                          );
+                        })}
+                      </ul>
+
+                      <h5>-{singleBlog?.heading4}.</h5>
+
+                      <p>{singleBlog?.heading4Paragraph}</p>
 
                       <div className="quotes text-center">
                         <p>

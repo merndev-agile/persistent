@@ -115,7 +115,7 @@ const Navbar = ({
           }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("li", {
             className: "nav-item",
             children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx(next_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-              href: `/about/about-dark`,
+              href: `/about`,
               children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("a", {
                 className: "nav-link",
                 children: "About"
@@ -193,19 +193,19 @@ const Navbar = ({
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
               className: "dropdown-menu",
               children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx(next_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-                href: `/web-application/web-application-dark`,
+                href: `/web-application`,
                 children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("a", {
                   className: "dropdown-item",
                   children: "Web Application Development"
                 })
               }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx(next_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-                href: `/mobile-devlopement/mobile-devlopement-dark`,
+                href: `/mobile-devlopement`,
                 children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("a", {
                   className: "dropdown-item",
                   children: "Mobile Application Development"
                 })
               }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx(next_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-                href: `/software-testing/software-testing-dark`,
+                href: `/software-testing`,
                 children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("a", {
                   className: "dropdown-item",
                   children: "Software Testing"
@@ -215,7 +215,7 @@ const Navbar = ({
           }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("li", {
             className: "nav-item",
             children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx(next_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-              href: `/contact/contact-dark`,
+              href: `/contact`,
               children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("a", {
                 className: "nav-link",
                 children: "Contact"

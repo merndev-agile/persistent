@@ -1,5 +1,5 @@
 {
-  "name": "vie-react",
+  "name": "prominence-react",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -30,5 +30,10 @@
   "devDependencies": {
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.4"
-  }
+  },
+  "version": "1.0.0",
+  "main": "next.config.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

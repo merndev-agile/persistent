@@ -393,7 +393,7 @@ const NavbarMobileApp = ({
           }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("li", {
             className: "nav-item",
             children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx(next_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-              href: "/contact/contact-dark",
+              href: "/contact",
               children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx("a", {
                 className: "nav-link",
                 children: "Contact"

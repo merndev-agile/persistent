@@ -87,7 +87,7 @@ const Navbar = ({ lr, nr, theme }) => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href={`/about/about-dark`}>
+              <Link href={`/about`}>
                 <a className="nav-link">About</a>
               </Link>
             </li>
@@ -167,21 +167,21 @@ const Navbar = ({ lr, nr, theme }) => {
                   <a className="dropdown-item">Custom Software Development</a>
                 </Link> */}
 
-                <Link href={`/web-application/web-application-dark`}>
+                <Link href={`/web-application`}>
                   <a className="dropdown-item">Web Application Development</a>
                 </Link>
-                <Link href={`/mobile-devlopement/mobile-devlopement-dark`}>
+                <Link href={`/mobile-devlopement`}>
                   <a className="dropdown-item">
                     Mobile Application Development
                   </a>
                 </Link>
-                <Link href={`/software-testing/software-testing-dark`}>
+                <Link href={`/software-testing`}>
                   <a className="dropdown-item">Software Testing</a>
                 </Link>
               </div>
             </li>
             <li className="nav-item">
-              <Link href={`/contact/contact-dark`}>
+              <Link href={`/contact`}>
                 <a className="nav-link">Contact</a>
               </Link>
             </li>

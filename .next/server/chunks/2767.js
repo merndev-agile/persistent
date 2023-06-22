@@ -353,7 +353,7 @@ const NavbarFullMenu = ({
                   children: /*#__PURE__*/jsx_runtime_.jsx("div", {
                     className: "o-hidden",
                     children: /*#__PURE__*/jsx_runtime_.jsx(next_link["default"], {
-                      href: `/about/about-dark`,
+                      href: `/about`,
                       children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("a", {
                         className: "link",
                         children: [/*#__PURE__*/jsx_runtime_.jsx("span", {
@@ -563,7 +563,7 @@ const NavbarFullMenu = ({
                   children: /*#__PURE__*/jsx_runtime_.jsx("div", {
                     className: "o-hidden",
                     children: /*#__PURE__*/jsx_runtime_.jsx(next_link["default"], {
-                      href: `/contact/contact-dark`,
+                      href: `/contact`,
                       children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("a", {
                         className: "link",
                         children: [/*#__PURE__*/jsx_runtime_.jsx("span", {

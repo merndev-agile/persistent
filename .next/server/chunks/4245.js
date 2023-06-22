@@ -118,7 +118,7 @@ const Intro2 = ({
               className: "text-white",
               children: "We help our clients succeed by creating brand identities, digital experiences, and print materials."
             }), /*#__PURE__*/jsx_runtime_.jsx(next_link["default"], {
-              href: `/about/about-dark`,
+              href: `/about`,
               children: /*#__PURE__*/jsx_runtime_.jsx("a", {
                 className: "butn bord curve mt-30",
                 children: /*#__PURE__*/jsx_runtime_.jsx("span", {

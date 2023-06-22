@@ -37,7 +37,7 @@ const Intro2 = ({ sliderRef }) => {
                 We help our clients succeed by creating brand identities,
                 digital experiences, and print materials.
               </p>
-              <Link href={`/about/about-dark`}>
+              <Link href={`/about`}>
                 <a className="butn bord curve mt-30">
                   <span>About Us</span>
                 </a>

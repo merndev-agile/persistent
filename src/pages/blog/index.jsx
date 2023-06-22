@@ -34,7 +34,7 @@ const BlogDark = () => {
     accessToken: "S7Hu2wy-w4NZClRg1W1lduJwqVWSpVbYN3O-gfVESZ0",
   });
 
-  useEffect(() => {
+  React.useEffect(() => {
     const getAllEntries = async () => {
       try {
         await client.getEntries().then((Entries) => {
