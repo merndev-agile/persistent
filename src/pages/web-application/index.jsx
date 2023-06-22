@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import NavbarFullMenu from "../../components/Navbar-full-menu/navbar.full-menu";
 import DarkTheme from "../../layouts/Dark";
 import Footer from "../../components/Footer/footer";
+import WebDevlopementPage from '../../components/Services/webdevlopement';
 
 
 const WebApplicationDark = () => {
@@ -9,7 +10,7 @@ const WebApplicationDark = () => {
   return (
     <DarkTheme>
       <NavbarFullMenu />
-      WEBDark
+      <WebDevlopementPage/>
       <div ref={MainContent} className="main-content">
         <Footer />
       </div>
