@@ -9,7 +9,6 @@ const MobileDevelopementDark = () => {
       <NavbarFullMenu />
       <MobileDevlopementPage/>
     </DarkTheme>
-    // <div>Mobile Dark</div>
   );
 };
 
