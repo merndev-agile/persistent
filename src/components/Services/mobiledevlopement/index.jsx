@@ -77,7 +77,7 @@ const mobileDevlopementPage = ({ theme = "dark" }) => {
                             work on both iOS and Android devices. This approach
                             enables code reusability, reduces development time,
                             and provides a cost-effective solution without
-                            compromising on the app's quality or user
+                            compromising on the app&apos;s quality or user
                             experience.
                           </p>
                         </li>
@@ -115,7 +115,7 @@ const mobileDevlopementPage = ({ theme = "dark" }) => {
                           <p>
                             We integrate your mobile app with third-party
                             services and APIs to enhance its functionality and
-                            provide seamless user experiences. Whether it's
+                            provide seamless user experiences. Whether it&apos;s
                             integrating social media logins, payment gateways,
                             or incorporating push notifications, we have the
                             expertise to integrate the necessary features into
@@ -154,7 +154,7 @@ const mobileDevlopementPage = ({ theme = "dark" }) => {
                           <strong>
                             Mobile App Maintenance and Optimization:
                           </strong><p>
-                          As technology evolves, it's crucial to keep your
+                          As technology evolves, it&apos;s crucial to keep your
                           mobile app up-to-date and optimized. Our team provides
                           comprehensive app maintenance services, including
                           regular updates, bug fixes, performance optimization,
