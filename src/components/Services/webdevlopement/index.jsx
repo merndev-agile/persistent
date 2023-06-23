@@ -33,7 +33,7 @@ const webDevlopementPage = ({ theme = "dark" }) => {
                       <img
                           src="/img/webapplications1.png"
                           alt="Team Collaboration"
-                          style={{ height: "500px" }}
+                          style={{ height: "610" }}
                         />
                       <div className="spacial">
                         <p>

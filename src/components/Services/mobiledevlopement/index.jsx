@@ -35,9 +35,10 @@ const mobileDevlopementPage = ({ theme = "dark" }) => {
                       </h3>
 
                       <img
-                        src="/img/webapplications1.png"
+                        src="/img/mobile app.png"
                         alt="Team Collaboration"
-                        style={{ height: "500px" }}
+                        style={{ height: "610", objectPosition:"center" 
+                       }}
                       />
                       <div className="spacial">
                         <p>
