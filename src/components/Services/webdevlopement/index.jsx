@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
+import PageHeader from "../../Page-header/page-header";
 const webDevlopementPage = ({ theme = "dark" }) => {
   function validateEmail(value) {
     let error;
@@ -22,9 +23,18 @@ const webDevlopementPage = ({ theme = "dark" }) => {
                 <div className="row justify-content-center">
                   <div className="col-lg-10">
                     <div className="cont">
-                      <h4 className="extra-title">
+                      <h3 className="wow color-font" style={{marginBottom: '40px',marginTop:"30px", textAlign: "center"}}>
                         Web Application Development Services
-                      </h4>
+                      </h3>
+                      {/* <PageHeader
+                        title=" Web Application Development Services."
+                        // paragraph="All the most current news and events of our creative team."
+                      /> */}
+                      <img
+                          src="/img/webapplications1.png"
+                          alt="Team Collaboration"
+                          style={{ height: "610" }}
+                        />
                       <div className="spacial">
                         <p>
                           We offer comprehensive and professional web
@@ -38,7 +48,7 @@ const webDevlopementPage = ({ theme = "dark" }) => {
                         </p>
                       </div>
 
-                      <h5>-Our Services</h5>
+                      <h3 className="wow color-font">-Our Services</h3>
 
                       <ul>
                         <li>
@@ -100,7 +110,7 @@ const webDevlopementPage = ({ theme = "dark" }) => {
                             API Development and Integration &nbsp; :
                           </strong>
                           <p>
-                            {" "}
+                          
                             We develop RESTful APIs that enable seamless
                             integration with third-party services, allowing your
                             web application to interact with external systems,
@@ -113,7 +123,7 @@ const webDevlopementPage = ({ theme = "dark" }) => {
                             Quality Assurance and Testing &nbsp; :
                           </strong>
                           <p>
-                            {" "}
+                            
                             Our dedicated QA team rigorously tests your web
                             application to identify and resolve any issues,
                             ensuring high performance, compatibility across
@@ -124,7 +134,7 @@ const webDevlopementPage = ({ theme = "dark" }) => {
                         <li>
                           <strong>Deployment and Maintenance &nbsp; :</strong>
                           <p>
-                            {" "}
+                          
                             We provide comprehensive deployment services,
                             assisting you in launching your web application on
                             reliable hosting platforms. Additionally, we offer
@@ -135,7 +145,7 @@ const webDevlopementPage = ({ theme = "dark" }) => {
                         </li>
                       </ul>
 
-                      <h5>-Why Choose Us?</h5>
+                      <h3 className="wow color-font">-Why Choose Us?</h3>
 
                       <p>
                         When you choose our web application development
@@ -172,7 +182,6 @@ const webDevlopementPage = ({ theme = "dark" }) => {
                             Scalable and Flexible Solutions &nbsp; :
                           </strong>
                           <p>
-                        
                             Our web applications are designed to scale with your
                             business needs. We architect flexible solutions that
                             can accommodate increased user demand, additional
@@ -185,7 +194,7 @@ const webDevlopementPage = ({ theme = "dark" }) => {
                             Customized Development Approach &nbsp; :
                           </strong>
                           <p>
-                            {" "}
+                           
                             We understand that your business is unique. Our
                             development approach is customized to your specific
                             requirements, ensuring that your web application
@@ -201,9 +210,9 @@ const webDevlopementPage = ({ theme = "dark" }) => {
                             We prioritize open and transparent communication
                             throughout the development process. Our project
                             management ensures regular updates, active
-                            involvement, and collaboration, so you&apos;re always
-                            aware of project progress and can provide valuable
-                            input.
+                            involvement, and collaboration, so you&apos;re
+                            always aware of project progress and can provide
+                            valuable input.
                           </p>
                         </li>
                         <li>
