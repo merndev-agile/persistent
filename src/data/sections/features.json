@@ -2,20 +2,20 @@
     {
         "id": 1,
         "icon": "pe-7s-paint-bucket",
-        "title": "Graphic Design",
-        "content": "Tempore corrupti temporibus fuga earum asperiores fugit laudantium."
+        "title": "Consulting",
+        "content": "Prominence Consultant is a reliable consulting firm that provides-on-demand services you need."
     },
     {
         "id": 2,
         "icon": "pe-7s-phone",
-        "title": "Web & Mobile Design",
-        "content": "Tempore corrupti temporibus fuga earum asperiores fugit."
+        "title": "Development",
+        "content": "Our team of experienced consultants provide with broad range of development services on multiple technologies.."
     },
     {
         "id": 3,
         "icon": "pe-7s-display1",
-        "title": "Social Media Marketing",
-        "content": "Tempore corrupti temporibus fuga earum asperiores fugit."
+        "title": "Staffing",
+        "content": "Our presence with our strong industry and skill focus enables us to address critical gaps in the workforce.."
     },
     {
         "id": 4,
